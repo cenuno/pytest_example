@@ -12,3 +12,10 @@ def calc_min_max(x: List[int]) -> Tuple[int, int]:
     # sort vector in ascending order
     x.sort()
     return (x[0], x[-1])
+
+
+def test_calc_min_max():
+    """
+    We are testing the output of the calc_min_max() function
+    """
+    assert calc_min_max(x=[1, 2, 3]) == (1, 3)
